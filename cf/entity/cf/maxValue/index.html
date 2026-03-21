@@ -1,0 +1,49 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>maximum value</title><style>body { font-family: Georgia, "Times New Roman", serif; margin: 0; color: #1f2933; background: linear-gradient(180deg, #f7f2e8 0%, #fffdf8 100%); }
+a { color: #0f4c5c; text-decoration: none; }
+a:hover { text-decoration: underline; }
+main { max-width: 1100px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+header.hero { padding: 1.25rem 0 1.5rem; border-bottom: 1px solid #d9d3c6; margin-bottom: 2rem; }
+.eyebrow { text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.75rem; color: #6c5f50; }
+h1 { font-size: 2.3rem; margin: 0.25rem 0 0.5rem; line-height: 1.1; }
+.meta { color: #5a4f43; margin: 0.2rem 0; word-break: break-word; }
+.chips, .breadcrumbs, .link-list { display: flex; flex-wrap: wrap; gap: 0.55rem; padding: 0; list-style: none; }
+.chip { display: inline-block; padding: 0.25rem 0.55rem; border: 1px solid #c7bfb1; border-radius: 999px; background: #fff; color: #2d2a26; }
+.layout { display: grid; grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr); gap: 2rem; }
+section.card, aside.card { background: rgba(255,255,255,0.82); border: 1px solid #e2dbcf; border-radius: 18px; padding: 1rem 1.1rem; margin-bottom: 1rem; box-shadow: 0 6px 20px rgba(76, 64, 51, 0.06); }
+h2, h3 { margin-top: 0; color: #2f4858; }
+dl.docs { margin: 0; }
+dl.docs dt { font-weight: 700; margin-top: 0.9rem; }
+dl.docs dd { margin: 0.3rem 0 0; }
+.index-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; }
+.muted { color: #786f64; }
+footer { margin-top: 3rem; color: #786f64; font-size: 0.95rem; }
+@media (max-width: 900px) { .layout { grid-template-columns: 1fr; } }</style></head><body>
+    <main>
+      <header class="hero">
+        <div class="eyebrow">Ontology-Derived Entity</div>
+        <h1>maximum value</h1>
+        <p class="meta"><strong>QName:</strong> cf:maxValue</p>
+        <p class="meta"><strong>Canonical IRI:</strong> https://cogniflow.odea-project.org/cf#maxValue</p>
+        <p class="meta"><strong>Route:</strong> /entity/cf/maxValue</p>
+        <div class="chips"><span class="chip">http://www.w3.org/2002/07/owl#DatatypeProperty</span></div>
+      </header>
+      <section class="card">
+        <h2>Breadcrumb</h2>
+        <ul class="breadcrumbs"><li><a class="chip" href="/entity/cf/maxValue/">maximum value</a></li></ul>
+      </section>
+      <div class="layout">
+        <div>
+          <section class="card">
+            <h2>Documentation</h2>
+            <dl class="docs"><dt>Definition</dt><dd>Inclusive upper bound for numeric parameter values (design-time hint). For strict runtime validation, use SHACL (sh:maxInclusive) on schema:value of schema:PropertyValue.</dd><dt>Scope</dt><dd>Use maximum value on Parameter resources to record inclusive upper bound for numeric parameter values (design-time hint). For strict runtime validation, use SHACL (sh:maxInclusive) on schema:value of schema:PropertyValue. Keep the literal aligned with the declared decimal range and instance-level runtime metadata.</dd><dt>Example</dt><dd>Example: a Parameter can set maximum value to 3.14 when that metadata is known.</dd></dl>
+          </section>
+          <section class="card"><h3>Domains</h3><ul class="link-list"><li><a class="chip" href="/entity/cf/Parameter/">Parameter</a></li></ul></section><section class="card"><h3>Ranges</h3><ul class="link-list"><li><span class="chip">http://www.w3.org/2001/XMLSchema#decimal</span></li></ul></section>
+        </div>
+        <aside class="card">
+          <h2>Related Nodes</h2>
+          <div class="chips"><span class="chip">http://www.w3.org/2002/07/owl#DatatypeProperty</span><a class="chip" href="/entity/cf/Parameter/">Parameter</a><span class="chip">http://www.w3.org/2001/XMLSchema#decimal</span></div>
+        </aside>
+      </div>
+      <footer>Generated from the Cogniflow ontology without manual entity authoring.</footer>
+    </main>
+    </body></html>
