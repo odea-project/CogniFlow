@@ -53,19 +53,11 @@ footer { margin-top: 2.2rem; color: var(--muted); font-size: 0.9rem; padding-top
         <h2>Breadcrumb</h2>
         <ul class="breadcrumbs"><li><span class="chip chip-breadcrumb">https://schema.org/Event</span></li><li><a class="chip chip-breadcrumb" href="/cf/entity/cf/PipelineRunEvent/">Pipeline Run Event</a></li></ul>
       </section>
-      <div class="layout">
-        <div>
-          <section class="card">
-            <h2>Documentation</h2>
-            <dl class="docs"><dt>Definition</dt><dd>Runtime event emitted by triggers, runners, or orchestrators for a pipeline run (append-only log).</dd><dt>Scope</dt><dd>PipelineRunEvent is one append-only runtime event associated with a run or pipeline. Use it for observable state changes, trigger notices, and engine log entries that should remain historically traceable.</dd><dt>Example</dt><dd>Example: a runner can emit a PipelineRunEvent when a leased queue entry starts, fails, or completes.</dd></dl>
-          </section>
-          <section class="card"><h3>Incoming References</h3><ul class="link-list"><li><a class="chip chip-incoming" href="/cf/entity/cf/dedupeKey/">dedupe key</a></li><li><a class="chip chip-incoming" href="/cf/entity/cf/eventForPipeline/">event for pipeline</a></li><li><a class="chip chip-incoming" href="/cf/entity/cf/eventForRun/">event for run</a></li><li><a class="chip chip-incoming" href="/cf/entity/cf/eventPayload/">event payload</a></li><li><a class="chip chip-incoming" href="/cf/entity/cf/eventType/">event type</a></li></ul></section>
-        </div>
-        <aside class="card">
-          <h2>Related Nodes</h2>
-          <div class="chips"><span class="muted">No related ontology nodes.</span></div>
-        </aside>
-      </div>
+      <section class="card">
+        <h2>Documentation</h2>
+        <dl class="docs"><dt>Definition</dt><dd>Runtime event emitted by triggers, runners, or orchestrators for a pipeline run (append-only log).</dd><dt>Scope</dt><dd>PipelineRunEvent is one append-only runtime event associated with a run or pipeline. Use it for observable state changes, trigger notices, and engine log entries that should remain historically traceable.</dd><dt>Example</dt><dd>Example: a runner can emit a PipelineRunEvent when a leased queue entry starts, fails, or completes.</dd></dl>
+      </section>
+      <section class="card"><h3>Incoming References</h3><ul class="link-list"><li><a class="chip chip-incoming" href="/cf/entity/cf/dedupeKey/">dedupe key</a></li><li><a class="chip chip-incoming" href="/cf/entity/cf/eventForPipeline/">event for pipeline</a></li><li><a class="chip chip-incoming" href="/cf/entity/cf/eventForRun/">event for run</a></li><li><a class="chip chip-incoming" href="/cf/entity/cf/eventPayload/">event payload</a></li><li><a class="chip chip-incoming" href="/cf/entity/cf/eventType/">event type</a></li></ul></section>
       <footer>Generated from the Cogniflow ontology without manual entity authoring.</footer>
     </main>
     </body></html>

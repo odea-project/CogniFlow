@@ -53,19 +53,11 @@ footer { margin-top: 2.2rem; color: var(--muted); font-size: 0.9rem; padding-top
         <h2>Breadcrumb</h2>
         <ul class="breadcrumbs"><li><a class="chip chip-breadcrumb" href="/cf/entity/cf/NodePosition/">Node Position</a></li></ul>
       </section>
-      <div class="layout">
-        <div>
-          <section class="card">
-            <h2>Documentation</h2>
-            <dl class="docs"><dt>Definition</dt><dd>Editor position container for a PipelineNode (x, y, optional z). Modeled as a separate resource to keep ordering (schema:position) distinct from editor coordinates and to allow future metadata on positions.</dd><dt>Scope</dt><dd>NodePosition carries editor coordinates for one PipelineNode. Use it for canvas layout metadata only; ordering and execution semantics are modeled elsewhere.</dd><dt>Example</dt><dd>Example: a node editor can store a NodePosition with x and y coordinates so a saved pipeline reopens with the same layout.</dd></dl>
-          </section>
-          <section class="card"><h3>Incoming References</h3><ul class="link-list"><li><a class="chip chip-incoming" href="/cf/entity/cf/nodePosition/">node position</a></li><li><a class="chip chip-incoming" href="/cf/entity/cf/posX/">position x</a></li><li><a class="chip chip-incoming" href="/cf/entity/cf/posY/">position y</a></li><li><a class="chip chip-incoming" href="/cf/entity/cf/posZ/">position z</a></li></ul></section>
-        </div>
-        <aside class="card">
-          <h2>Related Nodes</h2>
-          <div class="chips"><span class="muted">No related ontology nodes.</span></div>
-        </aside>
-      </div>
+      <section class="card">
+        <h2>Documentation</h2>
+        <dl class="docs"><dt>Definition</dt><dd>Editor position container for a PipelineNode (x, y, optional z). Modeled as a separate resource to keep ordering (schema:position) distinct from editor coordinates and to allow future metadata on positions.</dd><dt>Scope</dt><dd>NodePosition carries editor coordinates for one PipelineNode. Use it for canvas layout metadata only; ordering and execution semantics are modeled elsewhere.</dd><dt>Example</dt><dd>Example: a node editor can store a NodePosition with x and y coordinates so a saved pipeline reopens with the same layout.</dd></dl>
+      </section>
+      <section class="card"><h3>Incoming References</h3><ul class="link-list"><li><a class="chip chip-incoming" href="/cf/entity/cf/nodePosition/">node position</a></li><li><a class="chip chip-incoming" href="/cf/entity/cf/posX/">position x</a></li><li><a class="chip chip-incoming" href="/cf/entity/cf/posY/">position y</a></li><li><a class="chip chip-incoming" href="/cf/entity/cf/posZ/">position z</a></li></ul></section>
       <footer>Generated from the Cogniflow ontology without manual entity authoring.</footer>
     </main>
     </body></html>

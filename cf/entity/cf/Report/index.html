@@ -53,19 +53,11 @@ footer { margin-top: 2.2rem; color: var(--muted); font-size: 0.9rem; padding-top
         <h2>Breadcrumb</h2>
         <ul class="breadcrumbs"><li><span class="chip chip-breadcrumb">https://schema.org/WebPage</span></li><li><a class="chip chip-breadcrumb" href="/cf/entity/cf/Report/">Report</a></li></ul>
       </section>
-      <div class="layout">
-        <div>
-          <section class="card">
-            <h2>Documentation</h2>
-            <dl class="docs"><dt>Definition</dt><dd>Live, HTML-based report view for a ProcessingPipeline. The report is dynamically rendered and aggregates pipeline graph, status, trigger info, and observables. Reports are intended to be per pipeline, not per run.</dd><dt>Scope</dt><dd>Report represents the live, rendered report surface associated with a pipeline. Use it for presentation metadata and pipeline-level report identity rather than for individual run events.</dd><dt>Example</dt><dd>Example: a monitoring pipeline can expose one Report that renders status text, charts, and tables in the web UI.</dd></dl>
-          </section>
-          <section class="card"><h3>Incoming References</h3><ul class="link-list"><li><a class="chip chip-incoming" href="/cf/entity/cf/hasObservable/">has observable</a></li><li><a class="chip chip-incoming" href="/cf/entity/cf/reportForPipeline/">report for pipeline</a></li><li><a class="chip chip-incoming" href="/cf/entity/cf/reportForRun/">report for run</a></li></ul></section>
-        </div>
-        <aside class="card">
-          <h2>Related Nodes</h2>
-          <div class="chips"><span class="muted">No related ontology nodes.</span></div>
-        </aside>
-      </div>
+      <section class="card">
+        <h2>Documentation</h2>
+        <dl class="docs"><dt>Definition</dt><dd>Live, HTML-based report view for a ProcessingPipeline. The report is dynamically rendered and aggregates pipeline graph, status, trigger info, and observables. Reports are intended to be per pipeline, not per run.</dd><dt>Scope</dt><dd>Report represents the live, rendered report surface associated with a pipeline. Use it for presentation metadata and pipeline-level report identity rather than for individual run events.</dd><dt>Example</dt><dd>Example: a monitoring pipeline can expose one Report that renders status text, charts, and tables in the web UI.</dd></dl>
+      </section>
+      <section class="card"><h3>Incoming References</h3><ul class="link-list"><li><a class="chip chip-incoming" href="/cf/entity/cf/hasObservable/">has observable</a></li><li><a class="chip chip-incoming" href="/cf/entity/cf/reportForPipeline/">report for pipeline</a></li><li><a class="chip chip-incoming" href="/cf/entity/cf/reportForRun/">report for run</a></li></ul></section>
       <footer>Generated from the Cogniflow ontology without manual entity authoring.</footer>
     </main>
     </body></html>
