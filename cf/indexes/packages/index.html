@@ -14,6 +14,8 @@ h1 { font-size: clamp(2rem, 4vw, 3.2rem); margin: 0.35rem 0 0.65rem; line-height
 code { font-family: "Cascadia Mono", "Consolas", monospace; background: var(--code-bg); border: 1px solid var(--line); padding: 0.08rem 0.32rem; }
 .chips, .breadcrumbs, .link-list { display: flex; flex-wrap: wrap; gap: 0.55rem; padding: 0; list-style: none; }
 .stack-list { display: grid; gap: 0.5rem; padding: 0; margin: 0; list-style: none; }
+.stack-group { display: grid; gap: 0.55rem; }
+.stack-group-title { margin: 0; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-dark); }
 .chip { display: inline-flex; align-items: center; gap: 0.42rem; min-height: 2rem; padding: 0.28rem 0.66rem; border: 1px solid var(--chip-neutral-border); background: linear-gradient(180deg, var(--chip-neutral-bg), color-mix(in srgb, var(--chip-neutral-bg) 82%, #dbeafe)); color: var(--chip-neutral-text); text-transform: none; letter-spacing: 0.01em; font-size: 0.92rem; font-weight: 600; transition: transform 120ms ease, border-color 120ms ease, background-color 120ms ease, box-shadow 120ms ease; box-shadow: inset 0 1px 0 rgba(255,255,255,0.78); }
 .chip::before { content: ""; width: 0.48rem; height: 0.48rem; background: currentColor; opacity: 0.75; flex: 0 0 auto; }
 .chip:hover { transform: translateY(-1px); border-color: var(--accent); box-shadow: inset 0 1px 0 rgba(255,255,255,0.75), 0 4px 12px rgba(10, 30, 43, 0.08); }
