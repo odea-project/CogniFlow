@@ -27,18 +27,60 @@ footer { margin-top: 3rem; color: #786f64; font-size: 0.95rem; }
       </header>
       <div class="index-grid">
         <section class="card">
-          <h2><a href="/indexes/namespaces/">Namespaces</a></h2>
+          <h2><a href="/cf/indexes/namespaces/">Namespaces</a></h2>
           <p class="muted">Browse exported entities grouped by QName prefix.</p>
         </section>
         <section class="card">
-          <h2><a href="/indexes/types/">Types</a></h2>
+          <h2><a href="/cf/indexes/types/">Types</a></h2>
           <p class="muted">Browse exported entities grouped by rdf:type.</p>
         </section>
         <section class="card">
-          <h2><a href="/indexes/packages/">Packages</a></h2>
+          <h2><a href="/cf/indexes/packages/">Packages</a></h2>
           <p class="muted">Browse package-bound entities grouped by `cf:belongsToStepPackage`.</p>
         </section>
       </div>
+      <section class="card">
+        <h2>Hash IRI Resolution</h2>
+        <p class="muted">If you open this page with a fragment like <code>#ProcessingStep</code>, the page resolves it to the generated entity route.</p>
+        <noscript><p class="muted">JavaScript is required to resolve hash IRIs in the browser.</p></noscript>
+      </section>
       <footer>Canonical ontology identity remains the hash IRI; website navigation uses derived internal routes.</footer>
     </main>
+    <script>
+    (function() {
+      const fragment = window.location.hash ? decodeURIComponent(window.location.hash.slice(1)) : "";
+      if (!fragment) {
+        return;
+      }
+      const normalize = (value) => {
+        const variants = [];
+        if (!value) {
+          return variants;
+        }
+        variants.push(value);
+        if (value.includes("#")) {
+          variants.push(value.split("#").pop());
+        }
+        if (value.includes(":") && !value.includes("://")) {
+          variants.push(value.split(":").pop());
+        }
+        return Array.from(new Set(variants.filter(Boolean)));
+      };
+      fetch("/cf/resolver-map.json", { cache: "no-store" })
+        .then((response) => response.ok ? response.json() : Promise.reject(new Error("resolver map unavailable")))
+        .then((mapping) => {
+          for (const candidate of normalize(fragment)) {
+            const resolved = mapping[candidate];
+            if (resolved) {
+              const basePath = "/cf";
+              const normalizedPath = "/" + String(resolved).replace(/^\/+/, "");
+              const target = (basePath || "") + normalizedPath.replace(/\/$/, "/");
+              window.location.replace(target.endsWith("/") ? target : target + "/");
+              return;
+            }
+          }
+        })
+        .catch(() => undefined);
+    })();
+    </script>
     </body></html>
