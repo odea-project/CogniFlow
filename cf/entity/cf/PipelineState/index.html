@@ -40,7 +40,7 @@ footer { margin-top: 2.2rem; color: var(--muted); font-size: 0.9rem; padding-top
       </header>
       <section class="card">
         <h2>Breadcrumb</h2>
-        <ul class="breadcrumbs"><li><a class="chip" href="/cf/entity/cf/PipelineState/">Pipeline State</a></li></ul>
+        <ul class="breadcrumbs"><li><span class="chip">https://schema.org/StructuredValue</span></li><li><a class="chip" href="/cf/entity/cf/PipelineState/">Pipeline State</a></li></ul>
       </section>
       <div class="layout">
         <div>
@@ -48,7 +48,7 @@ footer { margin-top: 2.2rem; color: var(--muted); font-size: 0.9rem; padding-top
             <h2>Documentation</h2>
             <dl class="docs"><dt>Definition</dt><dd>Runtime control/snapshot for a ProcessingPipeline (desired state, concurrency, next run).</dd><dt>Scope</dt><dd>PipelineState stores the mutable control snapshot for a pipeline, such as desired state, concurrency, and revision tracking. It is operational metadata, not the pipeline design itself.</dd><dt>Example</dt><dd>Example: a controller can keep one PipelineState resource that says a pipeline is enabled and currently pinned to revision 12.</dd></dl>
           </section>
-          <section class="card"><h3>Superclasses</h3><ul class="link-list"><li><span class="chip">https://schema.org/StructuredValue</span></li></ul></section><section class="card"><h3>Incoming References</h3><ul class="link-list"><li><a class="chip" href="/cf/entity/cf/concurrencyLimit/">concurrency limit</a></li><li><a class="chip" href="/cf/entity/cf/currentPipelineRevision/">current pipeline revision</a></li><li><a class="chip" href="/cf/entity/cf/desiredState/">desired state</a></li><li><a class="chip" href="/cf/entity/cf/lastRun/">last run</a></li><li><a class="chip" href="/cf/entity/cf/lastRunAt/">last run at</a></li><li><a class="chip" href="/cf/entity/cf/nextRunAt/">next run at</a></li><li><a class="chip" href="/cf/entity/cf/stateOfPipeline/">state of pipeline</a></li></ul></section>
+          <section class="card"><h3>Incoming References</h3><ul class="link-list"><li><a class="chip" href="/cf/entity/cf/concurrencyLimit/">concurrency limit</a></li><li><a class="chip" href="/cf/entity/cf/currentPipelineRevision/">current pipeline revision</a></li><li><a class="chip" href="/cf/entity/cf/desiredState/">desired state</a></li><li><a class="chip" href="/cf/entity/cf/lastRun/">last run</a></li><li><a class="chip" href="/cf/entity/cf/lastRunAt/">last run at</a></li><li><a class="chip" href="/cf/entity/cf/nextRunAt/">next run at</a></li><li><a class="chip" href="/cf/entity/cf/stateOfPipeline/">state of pipeline</a></li></ul></section>
         </div>
         <aside class="card">
           <h2>Related Nodes</h2>

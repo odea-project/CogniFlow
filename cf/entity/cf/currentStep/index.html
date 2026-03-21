@@ -40,7 +40,7 @@ footer { margin-top: 2.2rem; color: var(--muted); font-size: 0.9rem; padding-top
       </header>
       <section class="card">
         <h2>Breadcrumb</h2>
-        <ul class="breadcrumbs"><li><a class="chip" href="/cf/entity/cf/currentStep/">current step</a></li></ul>
+        <ul class="breadcrumbs"><li><span class="chip">http://www.allotrope.org/ontologies/process#Process</span></li><li><a class="chip" href="/cf/entity/cf/PipelineRun/">Pipeline Run</a></li><li><a class="chip" href="/cf/entity/cf/currentStep/">current step</a></li></ul>
       </section>
       <div class="layout">
         <div>
@@ -48,11 +48,11 @@ footer { margin-top: 2.2rem; color: var(--muted); font-size: 0.9rem; padding-top
             <h2>Documentation</h2>
             <dl class="docs"><dt>Definition</dt><dd>Legacy pointer to the PipelineStep currently being executed or awaited. Prefer cf:currentNode.</dd><dt>Scope</dt><dd>Use current step to link Pipeline Run resources to Pipeline Step resources when legacy pointer to the PipelineStep currently being executed or awaited. Prefer cf:currentNode. Keep this edge for its declared semantics rather than as a generic association.</dd><dt>Example</dt><dd>Example: a Pipeline Run can use current step when it needs to legacy pointer to the PipelineStep currently being executed or awaited. Prefer cf:currentNode.</dd></dl>
           </section>
-          <section class="card"><h3>Domains</h3><ul class="link-list"><li><a class="chip" href="/cf/entity/cf/PipelineRun/">Pipeline Run</a></li></ul></section><section class="card"><h3>Ranges</h3><ul class="link-list"><li><a class="chip" href="/cf/entity/cf/PipelineStep/">Pipeline Step</a></li></ul></section>
+          <section class="card"><h3>Ranges</h3><ul class="link-list"><li><a class="chip" href="/cf/entity/cf/PipelineStep/">Pipeline Step</a></li></ul></section>
         </div>
         <aside class="card">
           <h2>Related Nodes</h2>
-          <div class="chips"><a class="chip" href="/cf/entity/cf/PipelineRun/">Pipeline Run</a><a class="chip" href="/cf/entity/cf/PipelineStep/">Pipeline Step</a></div>
+          <div class="chips"><a class="chip" href="/cf/entity/cf/PipelineStep/">Pipeline Step</a></div>
         </aside>
       </div>
       <footer>Generated from the Cogniflow ontology without manual entity authoring.</footer>
