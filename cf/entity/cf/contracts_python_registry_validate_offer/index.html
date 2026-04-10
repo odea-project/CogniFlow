@@ -71,14 +71,18 @@ dl.docs dd { margin: 0; color: var(--ink); line-height: 1.58; max-width: 78ch; }
 .contract-tree-values { min-width: 0; }
 .contract-tree-empty { color: var(--muted); }
 .flow-steps { margin: 0; padding-left: 1.25rem; display: grid; gap: 0.45rem; line-height: 1.58; }
-.relationship-graph { width: 100%; overflow-x: auto; padding-bottom: 0.35rem; }
-.relationship-graph svg { width: 100%; height: auto; min-width: 720px; display: block; }
-.graph-edge { stroke: var(--accent-dark); stroke-width: 2.2; fill: none; opacity: 0.72; }
-.graph-edge-label { font-size: 12px; fill: var(--accent-dark); font-weight: 600; }
-.graph-node-rect { fill: rgba(255,255,255,0.92); stroke: var(--line-strong); stroke-width: 1.2; rx: 18; ry: 18; }
-.graph-node-title { font-size: 14px; font-weight: 700; fill: var(--ink); }
-.graph-node-role { font-size: 11px; fill: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
-.graph-legend { margin-top: 0.7rem; color: var(--muted); font-size: 0.9rem; }
+.sequence-diagram { width: 100%; overflow-x: auto; padding-bottom: 0.35rem; }
+.sequence-diagram svg { width: 100%; height: auto; min-width: 760px; display: block; }
+.sequence-participant-box { fill: rgba(255,255,255,0.94); stroke: var(--line-strong); stroke-width: 1.2; rx: 18; ry: 18; }
+.sequence-participant-title { font-size: 14px; font-weight: 700; fill: var(--ink); }
+.sequence-participant-role { font-size: 11px; fill: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+.sequence-lifeline { stroke: rgba(10, 30, 43, 0.22); stroke-width: 2; stroke-dasharray: 7 7; }
+.sequence-step-line { stroke: rgba(10, 30, 43, 0.1); stroke-width: 1; }
+.sequence-arrow { stroke: var(--accent-dark); stroke-width: 2.4; fill: none; opacity: 0.78; }
+.sequence-label { font-size: 12px; fill: var(--accent-dark); font-weight: 600; }
+.sequence-order { font-size: 12px; font-weight: 700; fill: var(--muted); }
+.sequence-note-box { fill: rgba(215, 246, 238, 0.76); stroke: rgba(15, 118, 110, 0.34); stroke-width: 1.1; rx: 14; ry: 14; }
+.sequence-legend { margin-top: 0.7rem; color: var(--muted); font-size: 0.9rem; }
 .flow-example-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 0.9rem; margin-top: 1rem; }
 .flow-example-card { border: 1px solid var(--line); background: rgba(255,255,255,0.58); padding: 0.95rem; }
 .flow-chain { display: grid; gap: 0.45rem; margin-top: 0.75rem; }
